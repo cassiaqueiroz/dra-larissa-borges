@@ -217,12 +217,13 @@ h6 {
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
+  border: 1px solid black;
 }
 
 .appointment-btn:hover {
  background: white;
   color: black;
-  border-style: solid;
+  border: 1px solid;
 }
 
 @media (max-width: 768px) {
@@ -610,6 +611,8 @@ h6 {
   line-height: 1;
   color: #fff;
   background: black;
+  opacity: 0.8;
+  border: 1px solid  white;
 }
 
 #hero .btn-get-started:hover {
@@ -659,7 +662,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f7fcfc;
+  background-color: #faf4ed;
 }
 
 .section-title {
@@ -753,108 +756,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Featured Services
---------------------------------------------------------------*/
-.featured-services .icon-box {
-  padding: 30px;
-  position: relative;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
-  transition: all 0.3s ease-in-out;
-  border-radius: 8px;
-  z-index: 1;
-}
-
-.featured-services .icon-box::before {
-  content: "";
-  position: absolute;
-  background: #d9f1f2;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 100%;
-  transition: all 0.3s;
-  z-index: -1;
-}
-
-.featured-services .icon-box:hover::before {
-  background: black;
-  top: 0;
-  border-radius: 0px;
-}
-
-.featured-services .icon {
-  margin-bottom: 15px;
-}
-
-.featured-services .icon i {
-  font-size: 48px;
-  line-height: 1;
-  color: black;
-  transition: all 0.3s ease-in-out;
-}
-
-.featured-services .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-.featured-services .title a {
-  color: #111;
-}
-
-.featured-services .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
-}
-
-.featured-services .icon-box:hover .title a,
-.featured-services .icon-box:hover .description {
-  color: #fff;
-}
-
-.featured-services .icon-box:hover .icon i {
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Cta
---------------------------------------------------------------*/
-.cta {
-  background: black;
-  color: #fff;
-  background-size: cover;
-  padding: 60px 0;
-}
-
-.cta h3 {
-  font-size: 28px;
-  font-weight: 700;
-}
-
-.cta .cta-btn {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 10px 35px;
-  border-radius: 25px;
-  transition: 0.5s;
-  margin-top: 10px;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-.cta .cta-btn:hover {
-  background: #fff;
-  color: black;
-  border-style: solid;
-}
 
 /*--------------------------------------------------------------
 # About Us
@@ -961,71 +862,6 @@ section {
   min-height: 400px;
 }
 
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
-.services .icon-box {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.services .icon {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height: 80px;
-  margin-bottom: 20px;
-  background: #fff;
-  border-radius: 50%;
-  transition: 0.5s;
-  color: black;
-  overflow: hidden;
-  box-shadow: 0px 0 25px rgba(0, 0, 0, 0.15);
-}
-
-.services .icon i {
-  font-size: 36px;
-  line-height: 0;
-}
-
-.services .icon-box:hover .icon {
-  box-shadow: 0px 0 25px rgba(63, 187, 192, 0.3);
-}
-
-.services .title {
-  font-weight: 600;
-  margin-bottom: 15px;
-  font-size: 18px;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.services .title a {
-  color: #444444;
-  transition: 0.3s;
-}
-
-.services .title a:hover {
-  color: black;
-}
-
-.services .title::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 2px;
-  background: black;
-  bottom: 0;
-  left: calc(50% - 25px);
-}
-
-.services .description {
-  line-height: 24px;
-  font-size: 14px;
-}
-
 
 /*--------------------------------------------------------------
 # Departments
@@ -1059,7 +895,7 @@ section {
 }
 
 .departments .nav-link.active {
-  background: #f7fcfc;
+  background: #faf4ed;
   border-color: black;
 }
 
@@ -1147,7 +983,7 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: #b2e4e6;
+  color: burlywood;
   font-size: 26px;
 }
 
@@ -1168,7 +1004,7 @@ section {
   font-style: italic;
   margin: 0 15px 0 15px;
   padding: 20px 20px 60px 20px;
-  background: #f0fafa;
+  background: #faf4ed;
   position: relative;
   border-radius: 6px;
   position: relative;
@@ -1217,7 +1053,7 @@ section {
   height: 40px;
   opacity: 0;
   transition: ease-in-out 0.3s;
-  background: rgba(255, 255, 255, 0.85);
+  background: #faf4ed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1366,7 +1202,7 @@ section {
 .pricing .btn-buy:hover {
   background: white;
   color: black;
-  border-style: solid;
+  border: 1px solid black;
 
 }
 
@@ -1388,70 +1224,6 @@ section {
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Frequently Asked Questioins
---------------------------------------------------------------*/
-.faq {
-  padding: 60px 0;
-}
-
-.faq .faq-list {
-  padding: 0;
-  list-style: none;
-}
-
-.faq .faq-list li {
-  border-bottom: 1px solid #d9f1f2;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
-
-.faq .faq-list .question {
-  display: block;
-  position: relative;
-  font-family: black;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  padding-left: 25px;
-  cursor: pointer;
-  color: #32969a;
-  transition: 0.3s;
-}
-
-.faq .faq-list i {
-  font-size: 16px;
-  position: absolute;
-  left: 0;
-  top: -2px;
-}
-
-.faq .faq-list p {
-  margin-bottom: 0;
-  padding: 10px 0 0 25px;
-}
-
-.faq .faq-list .icon-show {
-  display: none;
-}
-
-.faq .faq-list .collapsed {
-  color: black;
-}
-
-.faq .faq-list .collapsed:hover {
-  color: black;
-}
-
-.faq .faq-list .collapsed .icon-show {
-  display: inline-block;
-  transition: 0.6s;
-}
-
-.faq .faq-list .collapsed .icon-close {
-  display: none;
-  transition: 0.6s;
-}
 
 /*--------------------------------------------------------------
 # Contact
