@@ -499,14 +499,14 @@ h6 {
 
 #hero h2 {
   color: whitesmoke;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 80px;
   font-weight: 700;
   font-family: "Alta Caption";
 }
 
 #hero p {
-  margin: 0 auto 30px auto;
+  margin: 0 auto 10px auto;
   color: white;
 }
 
