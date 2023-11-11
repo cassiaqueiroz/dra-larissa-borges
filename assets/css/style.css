@@ -1076,11 +1076,12 @@ section {
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
-  border-radius: 4px;
+  border-radius: 20px;
   text-align: center;
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  border: 2px solid black;
 }
 
 #footer .footer-top .social-links a:hover {
