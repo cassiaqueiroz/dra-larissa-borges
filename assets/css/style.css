@@ -618,7 +618,7 @@ h6 {
 #hero .btn-get-started:hover {
   background: white;
   color: black;
-  border-style: solid;
+  border: 1px solid black;
 
 }
 
