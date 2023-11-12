@@ -13,21 +13,21 @@
 @font-face {
   font-family: 'Alta Light';
   src: url("../css/fonts/Alta_light.otf") format('opentype');
-  font-weight: 300; 
+  font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Alta Regular';
   src: url("../css/fonts/Alta_regular.otf") format('opentype');
-  font-weight: 500; 
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Alta Caption';
   src: url("../css/fonts/Alta_caption.otf") format('opentype');
-  font-weight: 700; 
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -42,7 +42,8 @@ a {
 }
 
 a:hover {
-  color: white;text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 h1,
@@ -52,7 +53,7 @@ h4,
 h5,
 h6 {
   font-family: "Alta Light";
-  
+
 }
 
 /*--------------------------------------------------------------
@@ -145,7 +146,7 @@ h6 {
 #topbar {
   background: #fff;
   opacity: 0.8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.7); 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   height: 40px;
   font-size: 16px;
   color: black;
@@ -221,7 +222,7 @@ h6 {
 }
 
 .appointment-btn:hover {
- background: white;
+  background: white;
   color: black;
   border: 1px solid;
 }
@@ -462,7 +463,7 @@ h6 {
   background-color: black;
   overflow: hidden;
   position: relative;
-  
+
 }
 
 #hero .carousel,
@@ -518,6 +519,7 @@ h6 {
   0% {
     transform: scale(1.1);
   }
+
   100% {
     transform: scale(1.0);
   }
@@ -612,7 +614,7 @@ h6 {
   color: #fff;
   background: black;
   opacity: 0.8;
-  border: 1px solid  white;
+  border: 1px solid white;
 }
 
 #hero .btn-get-started:hover {
@@ -651,6 +653,21 @@ h6 {
     height: 160vh;
   }
 }
+
+@media (max-width: 390px) and (max-height: 844px) {
+  #hero {
+    height: 115vh;
+  }
+
+  #hero h2 {
+    font-size: 20px;
+  }
+
+  #hero .text {
+    font-size: 15px;
+  }
+}
+
 
 
 /*--------------------------------------------------------------
@@ -1085,7 +1102,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
- background: white;
+  background: white;
   color: black;
   border-style: solid;
   text-decoration: none;
