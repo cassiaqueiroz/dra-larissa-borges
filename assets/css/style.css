@@ -188,7 +188,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 50px;
+  max-height: 48px;
 }
 
 /**
@@ -213,7 +213,7 @@ h6 {
   border: 1px solid;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 820px) {
   .appointment-btn {
     padding: 6px 15px;
     margin-right: 16px;
