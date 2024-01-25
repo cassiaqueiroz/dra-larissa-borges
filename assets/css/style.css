@@ -933,6 +933,13 @@ section {
   margin: 0 0 0 45px;
 }
 
+.testimonials .testimonial-item h4 a:hover {
+  font-size: 14px;
+  color: burlywood;
+  margin: 0 0 0 5px;
+}
+
+
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
   color: burlywood;
