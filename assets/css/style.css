@@ -933,10 +933,16 @@ section {
   margin: 0 0 0 45px;
 }
 
+.testimonials .testimonial-item h4 a {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 0 0;
+}
+
 .testimonials .testimonial-item h4 a:hover {
   font-size: 14px;
   color: burlywood;
-  margin: 0 0 0 5px;
+  margin: 0 0 0 4px;
 }
 
 
@@ -1125,12 +1131,12 @@ section {
 #footer .copyright {
   text-align: center;
   padding-top: 30px;
-  font-size: 13px;
+  font-size: 12px;
 
 }
 
 #footer .credits {
   padding-top: 10px;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
 }
