@@ -938,17 +938,23 @@ section {
   font-size: 14px;
   color: #999;
   margin: 0 0 0 0;
+  font-weight: 500px;
+
 }
 
 .testimonials .testimonial-item h4 a:hover {
   font-size: 14px;
   color: burlywood;
   margin: 0 0 0 4px;
+  font-weight: 500px;
+
 }
 
 @media (max-width: 768px) {
   .testimonials .testimonial-item h4 a:hover {
     margin: 0 0 0 0;
+    font-weight: 500px;
+
   }
 }
 
