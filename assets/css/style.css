@@ -938,6 +938,7 @@ section {
   font-size: 14px;
   color: #999;
   margin: 0 0 0 0;
+  text-decoration: underline;
 }
 
 .testimonials .testimonial-item h4 a:hover {
