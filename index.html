@@ -356,7 +356,7 @@
 
         <div class="row mt-5">
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
 
             <div class="row">
               <div class="col-md-12">
@@ -386,12 +386,12 @@
 
           </div>
 
-          <div class="col-lg-6 mt-4 mt-md-0">
-            <form data-form action="https://formsubmit.co/larissaborgesunp@gmail.com" method="post" role="form"
+          <div class="col-lg-12 mt-4">
+            <form data-form action="https://formsubmit.co/devcassiaqueiroz@gmail.com" method="post" role="form"
               class="php-email-form">
-              <input type="hidden" name="_cc" value="devcassiaqueiroz@gmail.com">
+              <!-- <input type="hidden" name="_cc" value="devcassiaqueiroz@gmail.com"> -->
               <div class="row">
-                <input type="hidden" name="_captcha" value="false">
+                <!-- <input type="hidden" name="_captcha" value="false"> -->
 
                 <p style="font-size: 14px;">Se você tem algum comentário, pergunta ou deseja registrar um depoimento,
                   envie uma mensagem aqui. Sua contribuição é valiosa para nossa equipe!</p>
@@ -406,12 +406,29 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="4" placeholder="Mensagem" required></textarea>
-              </div>
-              <div class="my-3">
+                <textarea class="form-control" name="message" rows="2" placeholder="Mensagem" required></textarea>
+                <div class="form-group mt-3">
+                  <label style="font-size: 14px;">Está enviando um depoimento? Escolha como publicar seu nome:</label>
+                  <div class="form-group mt-3">
 
-              </div>
-              <div class="text-center"><button data-button type="submit">Enviar mensagem</button></div>
+                    <div class="form-check mt-2">
+                      <input class="form-check-input-sm" type="radio" name="publishOption" id="publishNomeSobrenome"
+                        value="nome_sobrenome" checked>
+                      <label style="font-size: 14px;" class="form-check-label" for="publishNomeSobrenome">Nome e
+                        sobrenome</label>
+                    </div>
+                    <div class="form-check mt-2">
+                      <input class="form-check-input-sm" type="radio" name="publishOption" id="publishIniciais"
+                        value="iniciais">
+                      <label style="font-size: 14px;" class="form-check-label" for="publishIniciais">Apenas letras
+                        iniciais</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="my-3">
+
+                </div>
+                <div class="text-center"><button data-button type="submit">Enviar mensagem</button></div>
             </form>
           </div>
 
