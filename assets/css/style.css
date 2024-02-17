@@ -109,7 +109,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: none;
   color: black;
   border: 1px solid black;
 }
@@ -1197,7 +1197,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: rgba(246, 246, 246, 0.5);
+  background: none;
   color: black;
   border: 1px solid;
 }
