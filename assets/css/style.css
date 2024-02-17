@@ -95,7 +95,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: black;
+  background: rgba(0, 0, 0, 0.9);
   width: 40px;
   height: 40px;
   border-radius: 10px;
@@ -610,7 +610,7 @@ h1 {
   line-height: 1;
   color: #fff;
   background: black;
-  opacity: 0.8;
+  opacity: 0.85;
   border: 1px solid black;
 }
 
@@ -1116,7 +1116,7 @@ section {
 
 .contact .php-email-form button[type=submit] {
   margin-left: 25px;
-  background: black;
+  background: rgba(0, 0, 0, 0.9);
   color: #fff;
   border-radius: 10px;
   padding: 8px 25px;
@@ -1183,7 +1183,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: black;
+  background: rgba(0, 0, 0, 0.9);
   color: #fff;
   line-height: 1;
   padding: 8px 0;
