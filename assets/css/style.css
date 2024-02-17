@@ -582,7 +582,7 @@ h1 {
 #hero .carousel-indicators li {
   list-style-type: none;
   cursor: pointer;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
   overflow: hidden;
   border: 0;
   width: 12px;
