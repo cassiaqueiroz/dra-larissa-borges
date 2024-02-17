@@ -563,7 +563,6 @@ h1 {
   line-height: 0;
   width: auto;
   height: auto;
-  background: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   transition: 0.3s;
   color: black;
@@ -576,7 +575,8 @@ h1 {
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  border: 1px solid black;
+  background: rgba(255, 255, 255, 0.7);
+
 }
 
 #hero .carousel-indicators li {
