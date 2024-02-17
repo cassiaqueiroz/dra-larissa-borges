@@ -98,7 +98,7 @@ h6 {
   background: black;
   width: 40px;
   height: 40px;
-  border-radius: 4px;
+  border-radius: 10px;
   transition: all 0.4s;
 }
 
@@ -204,7 +204,7 @@ h6 {
   margin-left: 25px;
   background: black;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -291,7 +291,7 @@ h6 {
   background: #fff;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .navbar .dropdown ul li {
@@ -394,7 +394,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  border-radius: 8px;
+  border-radius: 10px;
   background-color: #fff;
   overflow-y: auto;
   transition: 0.3s;
@@ -564,7 +564,7 @@ h1 {
   width: auto;
   height: auto;
   background: rgba(255, 255, 255, 0.9);
-  border-radius: 50px;
+  border-radius: 10px;
   transition: 0.3s;
   color: black;
   width: 54px;
@@ -576,8 +576,7 @@ h1 {
 
 #hero .carousel-control-next-icon:hover,
 #hero .carousel-control-prev-icon:hover {
-  background: black;
-  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
 }
 
 #hero .carousel-indicators li {
@@ -606,13 +605,13 @@ h1 {
   letter-spacing: 1px;
   display: inline-block;
   padding: 14px 32px;
-  border-radius: 4px;
+  border-radius: 10px;
   transition: 0.5s;
   line-height: 1;
   color: #fff;
   background: black;
   opacity: 0.8;
-  border: 1px solid white;
+  border: 1px solid black;
 }
 
 #hero .btn-get-started:hover {
@@ -932,7 +931,7 @@ section {
   margin: -40px 0 0 40px;
   position: relative;
   z-index: 2;
-  border: 6px solid #fff;
+  border: 10px solid #fff;
 }
 
 .testimonials .testimonial-item h3 {
@@ -993,7 +992,7 @@ section {
   padding: 20px 20px 60px 20px;
   background: #faf4ed;
   position: relative;
-  border-radius: 6px;
+  border-radius: 10px;
   position: relative;
   z-index: 1;
 }
@@ -1097,7 +1096,7 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: none;
   font-size: 14px;
 }
@@ -1119,7 +1118,7 @@ section {
   margin-left: 25px;
   background: black;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 10px;
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
@@ -1189,7 +1188,7 @@ section {
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
-  border-radius: 8px;
+  border-radius: 10px;
   text-align: center;
   width: 36px;
   height: auto;
