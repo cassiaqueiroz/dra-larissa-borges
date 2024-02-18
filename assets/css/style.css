@@ -957,7 +957,6 @@ section {
 .testimonials .testimonial-item h4 a:hover {
   font-size: 14px;
   color: burlywood;
-  margin: 0 0 0 4px;
 }
 
 @media (max-width: 768px) {
@@ -1187,8 +1186,7 @@ section {
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: rgba(0, 0, 0, 0.9);
-  color: #fff;
+  color: #555555;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -1196,13 +1194,11 @@ section {
   text-align: center;
   width: 36px;
   height: auto;
-  transition: 0.3s;
 }
 
 #footer .footer-top .social-links a:hover {
   background: none;
-  color: black;
-  border: 1px solid;
+  border: 1.6px solid #555555;
 }
 
 #footer .footer-top h4 {
