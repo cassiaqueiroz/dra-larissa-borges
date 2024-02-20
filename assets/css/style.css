@@ -1188,12 +1188,13 @@ section {
   display: inline-block;
   color: #555555;
   line-height: 1;
-  padding: 8px 0;
+  padding: 7px 0;
   margin-right: 4px;
   border-radius: 10px;
   text-align: center;
-  width: 36px;
-  height: auto;
+  align-items: center;
+  width: 35px;
+  height: 35px;
 }
 
 #footer .footer-top .social-links a:hover {
