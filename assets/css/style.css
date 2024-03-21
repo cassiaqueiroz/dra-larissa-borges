@@ -466,8 +466,8 @@ h6 {
   background-color: black;
   overflow: hidden;
   position: relative;
+  filter: grayscale(100%) brightness(83%);}
 
-}
 
 #hero .carousel,
 #hero .carousel-inner,
