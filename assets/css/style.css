@@ -263,7 +263,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: #626262;
+  color: #727272;
   white-space: nowrap;
   transition: 0.3s;
   text-transform: uppercase;
@@ -414,7 +414,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #555555;
+  color: #727272;
 }
 
 .navbar-mobile a:hover,
@@ -1038,7 +1038,7 @@ section {
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 6px rgba(201, 201, 201, 0.4);
+  box-shadow: 0 0 5px rgba(201, 201, 201, 0.4);
   padding: 20px 0 30px 0;
 }
 
@@ -1065,7 +1065,7 @@ section {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 6px rgba(201, 201, 201, 0.4);
+  box-shadow: 0 0 5px rgba(201, 201, 201, 0.4);
   padding: 30px;
 }
 
