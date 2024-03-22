@@ -167,7 +167,7 @@ h6 {
 --------------------------------------------------------------*/
 #header {
   background: #fff;
-  opacity: 0.8;
+  opacity: 0.85;
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
@@ -381,7 +381,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(60, 60, 60, 0.9);
+  background: rgba(44, 44, 44, 1);
   transition: 0.3s;
   z-index: 999;
 }
@@ -1038,7 +1038,7 @@ section {
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 8px rgba(201, 201, 201, 0.4);
+  box-shadow: 0 0 6px rgba(201, 201, 201, 0.4);
   padding: 20px 0 30px 0;
 }
 
@@ -1065,7 +1065,7 @@ section {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 8px rgba(201, 201, 201, 0.4);
+  box-shadow: 0 0 6px rgba(201, 201, 201, 0.4);
   padding: 30px;
 }
 
@@ -1176,7 +1176,7 @@ section {
 #footer .footer-top {
   background: #f6f6f6;
   padding: 60px 0 30px 0;
-  box-shadow: 0 0 8px rgba(201, 201, 201, 0.4);
+  box-shadow: 0 0 6px rgba(201, 201, 201, 0.4);
 
 }
 
