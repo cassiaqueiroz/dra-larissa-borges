@@ -143,10 +143,10 @@ h6 {
 --------------------------------------------------------------*/
 #topbar {
   background: #fff;
-  opacity: 0.8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  opacity: 0.9;
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.9);
   height: 40px;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   font-weight: 400;
   z-index: 996;
@@ -201,6 +201,9 @@ h6 {
 
 #header .logo img {
   max-height: 48px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+
 }
 
 /**
@@ -239,8 +242,15 @@ h6 {
 /**
 * Desktop Navigation 
 */
+#navbar {
+  background-color: white;
+
+}
+
+
 .navbar {
   padding: 0;
+
 }
 
 .navbar ul {
@@ -1047,7 +1057,7 @@ section {
   color: black;
   border-radius: 50%;
   padding: 8px;
-  border: 2px dotted #dfc8ad;
+  border: 3px dashed #dfc8ad;
 }
 
 .contact .info-box h3 {
@@ -1274,4 +1284,11 @@ section {
   padding-top: 10px;
   text-align: center;
   font-size: 11px;
+}
+
+#footer .logo img {
+  max-height: 48px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+
 }
