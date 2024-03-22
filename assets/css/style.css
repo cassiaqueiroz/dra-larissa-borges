@@ -1191,7 +1191,7 @@ section {
 }
 
 #footer .footer-top {
-  background: linear-gradient(to left, rgba(123, 18, 50, 0.03), rgba(223, 218, 194, 0.1));
+  background: linear-gradient(to left, rgba(250, 244, 237, 0.1), rgba(250, 244, 237, 0.6));
   padding: 60px 0 30px 0;
   box-shadow: 4px 0 4px rgba(0, 0, 0, 0.1);
 
