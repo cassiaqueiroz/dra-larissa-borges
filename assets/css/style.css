@@ -937,7 +937,7 @@ section {
   
 }
 
-.testimonials .testimonial-item {
+/*.testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 370px;
   box-shadow: 0px 4px 4px rgba(250, 244, 237, 1);
@@ -945,6 +945,16 @@ section {
   margin: 60px 30px;
   background: linear-gradient(to left, rgba(250, 244, 237, 0.55), rgba(250, 244, 237, 0.75));
 
+}*/
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 20px 30px 30px 60px;
+  margin: 20px 10px;
+  min-height: 200px;
+  box-shadow: 0px 4px 8px rgba(44, 73, 100, 0.06);
+  position: relative;
+  background: linear-gradient(to left, rgba(123, 18, 50, 0.05), rgba(223, 218, 194, 0.2));
 }
 
 .testimonials .testimonial-item .testimonial-img {
