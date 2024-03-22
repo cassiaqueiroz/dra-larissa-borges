@@ -1166,7 +1166,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: radial-gradient(circle farthest-corner at center, #eeeeee, #f6f6f6);
+  background: radial-gradient(circle farthest-corner at center, white, #f6f6f6);
   padding: 0 0 30px 0;
   color: #555555;
   font-size: 14px;
@@ -1176,7 +1176,7 @@ section {
 #footer .footer-top {
   background: #f6f6f6;
   padding: 60px 0 30px 0;
-  box-shadow: 0 0 6px rgba(201, 201, 201, 0.4);
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.1);
 
 }
 
