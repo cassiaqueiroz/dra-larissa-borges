@@ -924,11 +924,17 @@ section {
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
+  
 }
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  min-height: 320px;
+  min-height: 370px;
+  box-shadow: 0px 4px 4px rgba(250, 244, 237, 1);
+  padding: 0px 0px 0px 0px;
+  margin: 70px 50px;
+  background: linear-gradient(to left, rgba(250, 244, 237, 0.55), rgba(250, 244, 237, 0.75));
+
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -938,6 +944,7 @@ section {
   position: relative;
   z-index: 2;
   border: 10px solid #fff;
+  
 }
 
 .testimonials .testimonial-item h3 {
@@ -993,8 +1000,7 @@ section {
 .testimonials .testimonial-item p {
   font-style: italic;
   margin: 0 15px 0 15px;
-  padding: 20px 20px 60px 20px;
-  background: #faf4ed;
+  padding: 40px 20px 50px 20px;
   position: relative;
   position: relative;
   z-index: 1;
@@ -1032,7 +1038,7 @@ section {
 .contact .info-box {
   color: #444444;
   text-align: center;
-  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  box-shadow: 0 0 8px rgba(201, 201, 201, 1);
   padding: 20px 0 30px 0;
 }
 
@@ -1059,7 +1065,7 @@ section {
 }
 
 .contact .php-email-form {
-  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  box-shadow: 0 0 8px rgba(201, 201, 201, 1);
   padding: 30px;
 }
 
@@ -1164,11 +1170,14 @@ section {
   padding: 0 0 30px 0;
   color: #555555;
   font-size: 14px;
+  box-shadow: 0 0 4px rgba(201, 201, 201, 0.6);
 }
 
 #footer .footer-top {
   background: #f6f6f6;
   padding: 60px 0 30px 0;
+  box-shadow: 0 0 8px rgba(201, 201, 201, 0.6);
+
 }
 
 #footer .footer-top .footer-info {
