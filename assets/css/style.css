@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   color: #444444;
 }
 
@@ -44,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Alta Light";
+  font-family: "Alta Caption";
 
 }
 
@@ -243,7 +243,9 @@ h6 {
 * Desktop Navigation 
 */
 
-
+#navbar {
+  opacity: 1;
+}
 
 .navbar {
   padding: 0;
@@ -268,7 +270,7 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-size: 14px;
   color: #828282;
   white-space: nowrap;
@@ -414,7 +416,7 @@ h6 {
 }
 
 .navbar-mobile li {
-  margin: 10px;
+  margin: 18px;
 }
 
 .navbar-mobile a,
@@ -428,18 +430,6 @@ h6 {
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
   color: black;
-}
-
-.navbar-mobile .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -474,7 +464,6 @@ h6 {
   overflow: hidden;
   position: relative;
   filter: grayscale(100%) brightness(83%);}
-
 
 #hero .carousel,
 #hero .carousel-inner,
@@ -616,7 +605,7 @@ h1 {
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -652,8 +641,14 @@ h1 {
 
   #hero h2,
   h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
+  .espacada {
+    word-spacing: 40px;
+    font-size: 15px;
+
+  }
+
 }
 
 @media (min-width: 1024px) {
@@ -855,7 +850,7 @@ section {
 .counts .count-box p {
   padding: 30px 0 0 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   font-size: 14px;
 }
 
@@ -865,7 +860,7 @@ section {
   margin-top: 20px;
   color: #7b7b7b;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Comfortaa", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -960,7 +955,7 @@ section {
   min-height: 200px;
   box-shadow: 0px 4px 6px rgba(44, 73, 100, 0.08);
   position: relative;
-  background: linear-gradient(to left, rgba(250, 244, 237, 0.55), rgba(250, 244, 237, 0.75));
+  background: linear-gradient(to left, rgba(250, 244, 237, 0.75), rgba(250, 244, 237, 0.95));
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -976,7 +971,7 @@ section {
 .testimonials .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
-  margin: 10px 0 5px 45px;
+  margin: 10px 0 5px 48px;
   color: #111;
 }
 
@@ -1006,8 +1001,8 @@ section {
 
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
-  color: burlywood;
-  font-size: 26px;
+  color: rgba(171, 151, 135, 0.6);
+  font-size: 25px;
 }
 
 .testimonials .testimonial-item .quote-icon-left {
@@ -1075,17 +1070,13 @@ section {
   background: none; /* Remove o fundo branco do container */
   padding: 40px;
   border-radius: 10px;
-
 }
 
 .contact .info-box {
   color: black; /* Altera a cor do texto para preto */
   text-align: center;
-  box-shadow: 0 0 5px rgba(201, 201, 201, 0.4);
-  padding: 20px 0 30px 0;
-  background: white; /* Altera o fundo para branco */
+  padding: 20px 0 10px 0;
   border-radius: 10px;
-
 }
 
 .contact .info-box i {
@@ -1093,7 +1084,8 @@ section {
   color: black; /* Altera a cor do ícone para preto */
   border-radius: 50%;
   padding: 8px;
-  border: 2px dashed #dfc8ad;
+  border: 2px dashed rgba(171, 151, 135, 0.6); 
+
 }
 
 .contact .info-box h3 {
@@ -1113,11 +1105,11 @@ section {
 
 .contact .php-email-form {
   box-shadow: 0 0 5px rgba(201, 201, 201, 0.4);
-  padding: 30px;
+  padding: 25px;
   background: white; /* Altera o fundo para branco */
   border-radius: 10px;
   color: black;
-
+  width: 100%;
 }
 
 .contact .php-email-form input,
@@ -1190,7 +1182,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 #footer .footer-top .social-links a {
