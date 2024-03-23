@@ -814,6 +814,11 @@ section {
   margin-bottom: 0;
 }
 
+.about .img{
+  box-shadow: 2px 2px 2px rgba(201, 201, 201, 0.6);
+
+}
+
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
@@ -1046,6 +1051,7 @@ section {
 --------------------------------------------------------------*/
 .img-fluid {
   border-radius: 0px;
+  box-shadow: 2px 2px 2px  rgba(201, 201, 201, 0.6);
 
 }
 
@@ -1056,10 +1062,9 @@ section {
 
 .contact .container {
   background: none; /* Remove o fundo branco do container */
-  box-shadow: 4px 4px 4px rgba(201, 201, 201, 0.6);
-  background: rgba(222, 184, 135, 0.1); /* Mantém o fundo rosado */
+  box-shadow: 2px 2px 2px rgba(201, 201, 201, 0.6);
+  background: rgba(223, 200, 173, 0.3); /* Mantém o fundo rosado */
   padding: 40px;
-
 
 }
 
@@ -1139,16 +1144,16 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: rgba(250, 244, 237, 0.75);
   padding: 0 0 30px 0;
   color: #555555;
   font-size: 14px;
-  box-shadow: 0 0 4px rgba(201, 201, 201, 0.4);
+  box-shadow: 0 0 4px rgba(201, 201, 201, 0.2);
+
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.2);
   background: white;
 
 
