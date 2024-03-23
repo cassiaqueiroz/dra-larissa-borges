@@ -1056,17 +1056,14 @@ section {
 
 }
 
-.contact {
-}
+
 
 .contact .container {
   background: none; /* Remove o fundo branco do container */
   padding: 40px;
   border-radius: 10px;
   background: rgba(223, 200, 173, 0.3); /* Mantém o fundo rosado */
-  box-shadow: 2px 2px 2px 2px rgba(201, 201, 201, 0.4);
-
-
+  box-shadow: 2px 2px 2px rgba(201, 201, 201, 0.6);
 
 }
 
