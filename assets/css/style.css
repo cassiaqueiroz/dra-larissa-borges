@@ -1061,7 +1061,7 @@ section {
 
 .contact {
   box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.4);
-  background: rgba(223, 200, 173, 0.3); /* Mantém o fundo rosado */
+  background: rgba(223, 200, 173, 0.15); /* Mantém o fundo rosado */
 
 }
 
@@ -1077,6 +1077,9 @@ section {
   text-align: center;
   padding: 20px 0 10px 0;
   border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 5px rgba(201, 201, 201, 0.4);
+
 }
 
 .contact .info-box i {
@@ -1106,7 +1109,6 @@ section {
 .contact .php-email-form {
   box-shadow: 0 0 5px rgba(201, 201, 201, 0.4);
   padding: 25px;
-  background: white; /* Altera o fundo para branco */
   border-radius: 10px;
   color: black;
   width: 100%;
@@ -1117,13 +1119,15 @@ section {
   border-radius: 10px;
   box-shadow: none;
   font-size: 13px;
-  background: white; /* Altera o fundo dos campos de entrada para branco */
+  background: none; /* Altera o fundo dos campos de entrada para branco */
   color: black; /* Altera a cor do texto nos campos de entrada para preto */
+  border-color: black;
+
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #dfc8ad;
+  border: 2px solid;
 }
 
 .contact .php-email-form button[type=submit] {
