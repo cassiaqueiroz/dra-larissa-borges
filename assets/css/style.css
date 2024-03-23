@@ -936,7 +936,7 @@ section {
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
   overflow: hidden;
-  
+ 
 }
 
 /*.testimonials .testimonial-item {
@@ -1066,6 +1066,7 @@ section {
   background: rgba(223, 200, 173, 0.3); /* Mantém o fundo rosado */
   padding: 40px;
 
+
 }
 
 .contact .info-box {
@@ -1074,6 +1075,8 @@ section {
   box-shadow: 0 0 5px rgba(201, 201, 201, 0.4);
   padding: 20px 0 30px 0;
   background: white; /* Altera o fundo para branco */
+  border-radius: 10px;
+
 }
 
 .contact .info-box i {
@@ -1081,7 +1084,7 @@ section {
   color: black; /* Altera a cor do ícone para preto */
   border-radius: 50%;
   padding: 8px;
-  border: 3px dashed #dfc8ad;
+  border: 2px dashed #dfc8ad;
 }
 
 .contact .info-box h3 {
@@ -1103,6 +1106,8 @@ section {
   box-shadow: 0 0 5px rgba(201, 201, 201, 0.4);
   padding: 30px;
   background: white; /* Altera o fundo para branco */
+  border-radius: 10px;
+
 }
 
 .contact .php-email-form input,
