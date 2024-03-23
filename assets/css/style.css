@@ -526,6 +526,10 @@ h1 {
   word-spacing: 345px;
 }
 
+.icon-spacing {
+  margin-right: 8px; 
+}
+
 @keyframes zoom {
   0% {
     transform: scale(1.1);
@@ -951,7 +955,7 @@ section {
 
 .testimonials .testimonial-item {
   box-sizing: content-box;
-  padding: 0px 20px 30px 60px;
+  padding: 0px 15px 30px 17px;
   margin: 30px 15px;
   min-height: 200px;
   box-shadow: 0px 4px 6px rgba(44, 73, 100, 0.08);
@@ -1056,14 +1060,21 @@ section {
 
 }
 
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+
+.contact {
+  box-shadow: 0px 0px 3px rgba(50, 50, 50, 0.4);
+  background: rgba(223, 200, 173, 0.3); /* Mantém o fundo rosado */
+
+}
 
 
 .contact .container {
   background: none; /* Remove o fundo branco do container */
   padding: 40px;
   border-radius: 10px;
-  background: rgba(223, 200, 173, 0.3); /* Mantém o fundo rosado */
-  box-shadow: 2px 2px 2px rgba(201, 201, 201, 0.6);
 
 }
 
@@ -1157,7 +1168,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 0 4px rgba(0, 0, 0, 0.15);
   background: white;
 
 
