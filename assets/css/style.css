@@ -1057,16 +1057,16 @@ section {
 }
 
 .contact {
-  box-shadow: 4px 4px 4px rgba(201, 201, 201, 0.6);
-
 }
 
 .contact .container {
   background: none; /* Remove o fundo branco do container */
-  box-shadow: 2px 2px 2px rgba(201, 201, 201, 0.6);
-  background: rgba(223, 200, 173, 0.3); /* Mantém o fundo rosado */
   padding: 40px;
   border-radius: 10px;
+  background: rgba(223, 200, 173, 0.3); /* Mantém o fundo rosado */
+  box-shadow: 2px 2px 2px 2px rgba(201, 201, 201, 0.4);
+
+
 
 }
 
@@ -1098,7 +1098,7 @@ section {
 .contact .info-box p {
   padding: 0;
   line-height: 24px;
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 0;
   color: black; /* Altera a cor do texto para preto */
 }
@@ -1108,6 +1108,7 @@ section {
   padding: 30px;
   background: white; /* Altera o fundo para branco */
   border-radius: 10px;
+  color: black;
 
 }
 
@@ -1115,7 +1116,7 @@ section {
 .contact .php-email-form textarea {
   border-radius: 10px;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 13px;
   background: white; /* Altera o fundo dos campos de entrada para branco */
   color: black; /* Altera a cor do texto nos campos de entrada para preto */
 }
