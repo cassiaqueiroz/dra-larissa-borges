@@ -24,7 +24,7 @@
 }
 
 body {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #444444;
 }
 
@@ -270,7 +270,7 @@ h6 {
   align-items: center;
   justify-content: center;
   padding: 10px 0 10px 30px;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: #828282;
   white-space: nowrap;
@@ -605,7 +605,7 @@ h1 {
 }
 
 #hero .btn-get-started {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 1px;
@@ -850,7 +850,7 @@ section {
 .counts .count-box p {
   padding: 30px 0 0 0;
   margin: 0;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
 
@@ -860,7 +860,7 @@ section {
   margin-top: 20px;
   color: #7b7b7b;
   font-size: 15px;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Poppins", sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -1186,7 +1186,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Red Hat Display", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #footer .footer-top .social-links a {
