@@ -955,7 +955,7 @@ section {
   min-height: 300px;
   box-shadow: 0px 4px 6px rgba(44, 73, 100, 0.08);
   position: relative;
-  background: linear-gradient(to left, rgba(250, 244, 237, 0.75), rgba(250, 244, 237, 0.95));
+  background: linear-gradient(to left, rgba(250, 244, 237, 0.73), rgba(250, 244, 237, 0.93));
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -1122,12 +1122,12 @@ section {
   font-size: 13px;
   background: white;
   color: black; /* Altera a cor do texto nos campos de entrada para preto */
-
 }
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
   border: 1px solid black;
+  box-shadow: none;
 }
 
 .contact .php-email-form button[type=submit] {
