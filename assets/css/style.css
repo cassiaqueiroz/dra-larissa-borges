@@ -100,6 +100,8 @@ h6 {
   height: 40px;
   border-radius: 10px;
   transition: all 0.4s;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 .back-to-top i {
@@ -112,6 +114,7 @@ h6 {
   background: none;
   color: black;
   border: 1px solid black;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -220,12 +223,16 @@ h6 {
   font-size: 14px;
   display: inline-block;
   border: 1px solid black;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 .appointment-btn:hover {
   background: white;
   color: black;
   border: 1px solid;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 @media (max-width: 820px) {
@@ -618,13 +625,15 @@ h1 {
   background: black;
   opacity: 0.85;
   border: 1px solid black;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.4);
+
 }
 
 #hero .btn-get-started:hover {
   background: white;
   color: black;
   border: 1px solid black;
-
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 992px) {
@@ -1141,12 +1150,14 @@ section {
   font-size: 13.66px;
   display: inline-block;
   border: 1px solid black;
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
 .contact .php-email-form button[type=submit]:hover {
   background: white;
   color: black;
   border: 1px solid;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 
