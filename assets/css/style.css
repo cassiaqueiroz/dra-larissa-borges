@@ -1047,14 +1047,14 @@ section {
 }
 
 #cookie-banner p {
-  margin: 25px 5px; /* Harmoniza o espaço acima e abaixo do texto */
+  margin: 25px 10px; /* Harmoniza o espaço acima e abaixo do texto */
   font-size: 14px;
   line-height: 1.6; /* Melhora a legibilidade */
   text-align: justify; /* Justifica o texto */
 }
 
 #cookie-banner button {
-  margin: 10px 5px; /* Ajusta o espaçamento entre os botões */
+  margin: 10px; /* Ajusta o espaçamento entre os botões */
   font-size: 13px;
   background: #000;
   color: #fff;
