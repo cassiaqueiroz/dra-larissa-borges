@@ -266,3 +266,41 @@
   new PureCounter();
 
 })()
+
+// Verificar se o consentimento já foi dado
+if (!localStorage.getItem('cookie-consent')) {
+  console.log("Consentimento não encontrado. Exibindo o banner.");
+  document.getElementById('cookie-banner').style.display = 'block';
+} else {
+  console.log("Consentimento encontrado. Escondendo o banner.");
+  document.getElementById('cookie-banner').style.display = 'none';
+}
+
+
+// Função para aceitar o consentimento
+document.getElementById('accept-btn').onclick = function() {
+  localStorage.setItem('cookie-consent', 'true');  // Salvar o consentimento
+  loadAnalytics();  // Carregar scripts de Analytics e Ads após consentimento
+  document.getElementById('cookie-banner').style.display = 'none';  // Esconder o banner
+};
+
+// Função para rejeitar o consentimento
+document.getElementById('reject-btn').onclick = function() {
+  localStorage.setItem('cookie-consent', 'false');  // Salvar a recusa
+  document.getElementById('cookie-banner').style.display = 'none';  // Esconder o banner
+};
+
+// Função para carregar o Google Analytics após o consentimento
+function loadAnalytics() {
+  let script = document.createElement('script');
+  script.async = true;
+  script.src = 'https://www.googletagmanager.com/gtag/js?id=G-GP0Q40N2N6';  // Substitua pelo seu ID de GA
+  document.head.appendChild(script);
+
+  script.onload = function() {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GP0Q40N2N6');  // Substitua pelo seu ID de GA
+  };
+}
