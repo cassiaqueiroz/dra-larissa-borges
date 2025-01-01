@@ -1046,13 +1046,13 @@ section {
 }
 
 #cookie-banner p {
-  margin: 15px;
+  margin: 12px;
   font-size: 14px;
 }
 
 #cookie-banner button {
   margin: 0 10px 15px 10px;
-  font-size: 14px;
+  font-size: 13px;
   background: #000;
   color: #fff;
   border-radius: 10px;
