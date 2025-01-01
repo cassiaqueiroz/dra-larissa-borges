@@ -1079,7 +1079,7 @@ section {
   position: absolute;
   top: 10px; /* Mantém distância do topo */
   right: 15px; /* Distância do lado direito */
-  font-size: 20px; /* Ajusta tamanho para equilíbrio */
+  font-size: 22px; /* Ajusta tamanho para equilíbrio */
   color: #333;
   cursor: pointer;
   background: transparent;
