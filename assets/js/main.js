@@ -304,3 +304,14 @@ function loadAnalytics() {
     gtag('config', 'G-GP0Q40N2N6');  // Substitua pelo seu ID de GA
   };
 }
+
+document.getElementById('close-banner').addEventListener('click', function () {
+  console.log('Botão de fechar clicado'); // Log de depuração
+  const banner = document.getElementById('cookie-banner');
+  if (banner) {
+    banner.style.display = 'none';
+    console.log('Banner escondido');
+  } else {
+    console.error('Banner não encontrado');
+  }
+});
