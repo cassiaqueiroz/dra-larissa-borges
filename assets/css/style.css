@@ -1041,18 +1041,20 @@ section {
   text-align: center;
   background-color: #fff;
   color: #333;
-  padding: 10px;
+  padding: 20px 15px; /* Aumenta o padding geral para maior espaçamento interno */
   z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Adiciona um leve sombreamento para destaque */
 }
 
 #cookie-banner p {
-  margin: 20px;
+  margin: 20px 0; /* Harmoniza o espaço acima e abaixo do texto */
   font-size: 14px;
+  line-height: 1.6; /* Melhora a legibilidade */
+  text-align: justify; /* Justifica o texto */
 }
 
-/* Botões Aceitar/Rejeitar */
 #cookie-banner button {
-  margin: 0 10px 10px;
+  margin: 10px 5px; /* Ajusta o espaçamento entre os botões */
   font-size: 13px;
   background: #000;
   color: #fff;
@@ -1066,7 +1068,7 @@ section {
   background: #fff;
   color: #000;
   border: 1px solid;
-  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .2)
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .2);
 }
 
 #cookie-banner button:focus {
@@ -1075,14 +1077,19 @@ section {
 
 #close-banner {
   position: absolute;
-  top: 4px;
-  right: 15px;
-  font-size: 23px;
+  top: 10px; /* Mantém distância do topo */
+  right: 15px; /* Distância do lado direito */
+  font-size: 20px; /* Ajusta tamanho para equilíbrio */
   color: #333;
   cursor: pointer;
   background: transparent;
   border: none;
   z-index: 1000;
+}
+
+#cookie-banner .buttons {
+  margin-top: 15px; /* Espaço entre o parágrafo e os botões */
+  margin-bottom: 10px; /* Espaço entre os botões e o fim do banner */
 }
 
 #footer {
