@@ -26,27 +26,58 @@ class FormSubmit {
     return formObject;
   }
 
+  validateFields() {
+    const fields = this.form.querySelectorAll("[name]");
+    let isValid = true;
+
+    fields.forEach((field) => {
+      if (!field.value.trim()) {
+        field.classList.add("error");
+        isValid = false;
+      } else {
+        field.classList.remove("error");
+      }
+
+      if (field.getAttribute("name") === "email") {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(field.value)) {
+          field.classList.add("error");
+          isValid = false;
+        } else {
+          field.classList.remove("error");
+        }
+      }
+    });
+
+    return isValid;
+  }
+
   onSubmission(event) {
     event.preventDefault();
-    event.target.disabled = true;
-    event.target.innerText = "Enviando...";
+    this.formButton.disabled = true;
+    this.formButton.innerText = "Enviando...";
   }
 
   async sendForm(event) {
     try {
+      if (!this.validateFields()) {
+        alert("Por favor, preencha todos os campos corretamente.");
+        return;
+      }
       this.onSubmission(event);
       await fetch(this.url, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
+          "Content-Type": "application/x-www-form-urlencoded",
         },
-        body: JSON.stringify(this.getFormObject()),
+        body: new URLSearchParams(this.getFormObject()).toString(),
       });
       this.displaySuccess();
     } catch (error) {
+      this.formButton.disabled = false;
+      this.formButton.innerText = "Enviar mensagem";
       this.displayError();
-      throw new Error(error);
+      console.error(error);
     }
   }
 
