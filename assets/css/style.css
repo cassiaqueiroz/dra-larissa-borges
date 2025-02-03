@@ -173,7 +173,7 @@ a:hover {
 #topbar {
   background: #fff;
   opacity: .9;
-  box-shadow: 0 1px rgba(0, 0, 0, .9);
+  box-shadow: 0 1px rgba(0, 0, 0, .2);
   font-size: 14px;
   font-weight: 400;
   transition: .5s
@@ -649,6 +649,118 @@ h1 {
   }
 }
 
+.get-a-quote {
+  box-shadow: 0 0 3px rgba(50, 50, 50, 0.4);
+}
+
+.get-a-quote .content {
+  padding: 30px 0;
+}
+
+.get-a-quote .content h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  position: relative;
+  color: #444;
+  /* Cor do texto */
+}
+
+.get-a-quote .content h3::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.9);
+  /* Cor de destaque (accent) */
+  left: 0;
+  bottom: 0;
+}
+
+.get-a-quote .content p {
+  font-size: 16px;
+  color: #444;
+  /* Cor do texto */
+}
+
+.get-a-quote .php-email-form {
+  padding: 25px;
+  border-radius: 10px;
+  color: #000;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(201, 201, 201, .4)
+}
+
+
+@media (max-width: 575px) {
+  .get-a-quote .php-email-form {
+    padding: 20px;
+  }
+}
+
+.get-a-quote .php-email-form h3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #444;
+  /* Cor do texto */
+}
+
+.get-a-quote .php-email-form p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #444;
+  /* Cor do texto */
+}
+
+.get-a-quote .php-email-form input[type="text"],
+.get-a-quote .php-email-form input[type="email"],
+.get-a-quote .php-email-form textarea {
+  border-radius: 10px;
+  font-size: 13px;
+  background: #fff;
+  color: #000
+}
+
+.get-a-quote .php-email-form input[type="text"]:focus,
+.get-a-quote .php-email-form input[type="email"]:focus,
+.get-a-quote .php-email-form textarea:focus {
+  border: 1px solid #000;
+  box-shadow: none
+}
+
+.get-a-quote .php-email-form input[type="text"]::placeholder,
+.get-a-quote .php-email-form input[type="email"]::placeholder,
+.get-a-quote .php-email-form textarea::placeholder {
+  color: rgba(68, 68, 68, 0.7);
+  /* Cor do placeholder */
+}
+
+.get-a-quote .php-email-form button[type="submit"] {
+  margin-left: 25px;
+  background: rgba(0, 0, 0, .9);
+  color: #fff;
+  border-radius: 10px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: .3s;
+  font-size: 13.66px;
+  display: inline-block;
+  border: 1px solid #000;
+  box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, .2)
+}
+
+.get-a-quote .php-email-form button[type="submit"]:hover {
+  background: #fff;
+  color: #000;
+  border: 1px solid;
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+
 section {
   padding: 60px 0
 }
@@ -690,9 +802,9 @@ section {
 
 .breadcrumbs {
   padding: 20px 0;
-  background-color: #ecf8f9;
-  min-height: 40px;
-  margin-top: 120px
+  background-color: rgba(223, 200, 173, 0.35);
+  min-height: 20px;
+  margin-top: 30px
 }
 
 #footer,
@@ -706,9 +818,13 @@ section {
   margin: 0
 }
 
+.breadcrumbs a:hover {
+  color: #666;
+}
+
 @media (max-width:992px) {
   .breadcrumbs {
-    margin-top: 70px
+    margin-top: 20px
   }
 
   .breadcrumbs h2 {
@@ -951,6 +1067,64 @@ section {
   background-color: #000
 }
 
+/* ======= FAQ Section ======= */
+#faq .faq-list {
+  padding: 10px;
+  list-style: none;
+}
+
+#faq .faq-list ul {
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+#faq .faq-list li {
+  background: #dfc8ad3f;
+  /* Fundo suave para cada item da FAQ */
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+#faq .faq-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #000;
+  /* Cor do texto da pergunta */
+  text-decoration: none;
+}
+
+#faq .faq-list a.collapsed {
+  color: #444;
+  /* Cor mais suave quando a pergunta está recolhida */
+}
+
+#faq .faq-list a i {
+  font-size: 22px;
+  padding-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+#faq .faq-list a.collapsed i.bx-chevron-down {
+  transform: rotate(0deg);
+  /* Ícone na posição padrão */
+}
+
+#faq .faq-list a:not(.collapsed) i.bx-chevron-down {
+  transform: rotate(180deg);
+  /* Ícone gira ao expandir */
+}
+
+#faq .faq-list p {
+  font-size: 14px;
+  color: #555;
+  /* Cor do texto da resposta */
+  margin-bottom: 0;
+}
+
 .img-fluid {
   border-radius: 0
 }
@@ -1034,27 +1208,33 @@ section {
 }
 
 #cookie-banner {
-  border-top: 1px solid #b6b6b6;
+  border-top: 1px solid #e0e0e0;
   position: fixed;
   bottom: 0;
   width: 100%;
   text-align: center;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.85);
   color: #333;
-  padding: 20px 15px; /* Aumenta o padding geral para maior espaçamento interno */
+  padding: 20px 15px;
+  /* Aumenta o padding geral para maior espaçamento interno */
   z-index: 1000;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Adiciona um leve sombreamento para destaque */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  /* Adiciona um leve sombreamento para destaque */
 }
 
 #cookie-banner p {
-  margin: 20px 15px; /* Harmoniza o espaço acima e abaixo do texto */
+  margin: 20px 15px;
+  /* Harmoniza o espaço acima e abaixo do texto */
   font-size: 13px;
-  line-height: 1.6; /* Melhora a legibilidade */
-  text-align: justify; /* Justifica o texto */
+  line-height: 1.6;
+  /* Melhora a legibilidade */
+  text-align: justify;
+  /* Justifica o texto */
 }
 
 #cookie-banner button {
-  margin: 5px; /* Ajusta o espaçamento entre os botões */
+  margin: 5px;
+  /* Ajusta o espaçamento entre os botões */
   font-size: 13px;
   background: #000;
   color: #fff;
@@ -1077,9 +1257,12 @@ section {
 
 #close-banner {
   position: absolute;
-  top: 10px; /* Mantém distância do topo */
-  right: 15px; /* Distância do lado direito */
-  font-size: 22px; /* Ajusta tamanho para equilíbrio */
+  top: 10px;
+  /* Mantém distância do topo */
+  right: 15px;
+  /* Distância do lado direito */
+  font-size: 22px;
+  /* Ajusta tamanho para equilíbrio */
   color: #333;
   cursor: pointer;
   background: transparent;
@@ -1088,8 +1271,10 @@ section {
 }
 
 #cookie-banner .buttons {
-  margin-top: 15px; /* Espaço entre o parágrafo e os botões */
-  margin-bottom: 10px; /* Espaço entre os botões e o fim do banner */
+  margin-top: 15px;
+  /* Espaço entre o parágrafo e os botões */
+  margin-bottom: 10px;
+  /* Espaço entre os botões e o fim do banner */
 }
 
 #footer {
@@ -1191,4 +1376,84 @@ section {
   padding-top: 10px;
   text-align: center;
   font-size: 11px
+}
+
+/* ======= Confirmation Page ======= */
+.confirmation {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+  /* Fundo branco para combinar com o estilo do site */
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  /* Sombra suave */
+}
+
+.confirmation-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+  /* Fundo branco para combinar com o estilo do site */
+  max-width: 800px;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Sombra suave */
+}
+
+.confirmation-container p {
+  font-size: 16px;
+  color: #444;
+  /* Cor do texto */
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.confirmation-container a {
+  color: #444;
+  /* Cor dos links */
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.confirmation-container a:hover {
+  color: #ab9787;
+  /* Cor ao passar o mouse */
+}
+
+.confirmation-container .btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #000;
+  /* Cor de fundo do botão */
+  color: #fff;
+  /* Cor do texto do botão */
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.confirmation-container .btn:hover {
+  background: #fff;
+  /* Cor de fundo ao passar o mouse */
+  color: #000;
+  /* Cor do texto ao passar o mouse */
+  border: 1px solid #000;
+  /* Borda ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .confirmation-container h1 {
+    font-size: 28px;
+    /* Título menor em dispositivos móveis */
+  }
+
+  .confirmation-container p {
+    font-size: 16px;
+    /* Texto menor em dispositivos móveis */
+  }
 }

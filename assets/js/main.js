@@ -315,3 +315,57 @@ document.getElementById('close-banner').addEventListener('click', function () {
     console.error('Banner não encontrado');
   }
 });
+
+// Espera o carregamento completo da página
+document.addEventListener('DOMContentLoaded', function() {
+
+  // Verifica se o formulário de orçamento (quote-form) existe
+  const quoteForm = document.getElementById('quote-form');
+
+  if (quoteForm) {
+    // Adiciona o listener de evento para o envio do formulário
+    quoteForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Impede o comportamento padrão do formulário
+
+      // Exibe o carregando (caso tenha essa classe no seu HTML)
+      quoteForm.querySelector('.loading').classList.add('d-block');
+      quoteForm.querySelector('.error-message').classList.remove('d-block');
+      quoteForm.querySelector('.sent-message').classList.remove('d-block');
+
+      const action = quoteForm.getAttribute('action'); // A URL de ação do formulário
+
+      // Cria um FormData para enviar os dados do formulário
+      let formData = new FormData(quoteForm);
+
+      // Envia o formulário via fetch
+      fetch(action, {
+        method: 'POST',
+        body: formData,
+        headers: { 'X-Requested-With': 'XMLHttpRequest' },
+      })
+      .then(response => {
+        if (response.ok) {
+          return response.text();
+        } else {
+          throw new Error(`${response.status} ${response.statusText} ${response.url}`);
+        }
+      })
+      .then(data => {
+        // Remove o carregando e trata a resposta
+        quoteForm.querySelector('.loading').classList.remove('d-block');
+        if (data.trim() === 'OK') {
+          // Se a resposta for OK, redireciona para a página de confirmação
+          window.location.href = "confirmation.html";
+        } else {
+          throw new Error(data || 'Falha ao enviar o formulário e nenhuma mensagem de erro foi retornada.');
+        }
+      })
+      .catch((error) => {
+        // Exibe uma mensagem de erro em caso de falha
+        quoteForm.querySelector('.loading').classList.remove('d-block');
+        quoteForm.querySelector('.error-message').innerHTML = error;
+        quoteForm.querySelector('.error-message').classList.add('d-block');
+      });
+    });
+  }
+});

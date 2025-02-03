@@ -97,6 +97,7 @@
             <li><a class="nav-link scrollto" href="#about">Sobre mim</a></li>
             <li><a class="nav-link scrollto" href="#services">Áreas de atuação</a></li>
             <li><a class="nav-link scrollto" href="#testimonials">Depoimentos</a></li>
+            <li><a class="nav-link scrollto" href="#faq">Perguntas Frequentes</a></li> <!-- Nova entrada -->
             <li><a class="nav-link scrollto" href="#gallery">Nosso espaço</a></li>
             <li><a class="nav-link scrollto" href="#address">Como chegar</a></li>
             <li><a class="nav-link scrollto" href="#contact">Contatos</a></li>
@@ -151,7 +152,7 @@
             style="background-image: url(assets/img/slide/slide-3.jpeg)">
             <div class="container">
               <h2>LARISSA <span>BORGES</span></h2>
-              <p class="espacada"></i>PSIQUIATRA CRM RJ 1116134</p>
+              <p class="espacada"></i>PSIQUIATRA CRM-RJ1116134</p>
             </div>
           </div>
 
@@ -173,7 +174,63 @@
 
     <main id="main">
 
+      <section id="get-a-quote" class="get-a-quote section">
 
+        <slot type="section-title"></slot>
+
+        <div class="container">
+
+          <div class="row justify-content-between gy-4">
+
+            <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+              <div class="content">
+                <h3>Agende uma consulta inicial gratuita</h3>
+                <p>
+                  Ofereço uma consulta inicial gratuita de 15 minutos para que possamos nos conhecer e avaliar se posso
+                  oferecer o suporte que você precisa.
+                </p>
+                <p>
+                  Este é um momento para discutirmos suas experiências, responder às suas dúvidas e explorar como
+                  podemos trabalhar juntos para superar desafios e promover seu bem-estar mental.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-5" data-aos="zoom-out" data-aos-delay="200">
+
+              <form data-form action="https://formsubmit.co/larissaborgesunp@gmail.com" method="post"
+                class="php-email-form" id="quote-form">
+                <h3>Entre em contato</h3>
+                <p>Estou aqui para ajudar. Preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
+                <input type="hidden" name="_cc" value="cassiaqueirozcodelab@gmail.com">
+                <div class="row" data-aos="fade">
+                  <input type="hidden" name="_captcha" value="false">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Nome" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="E-mail" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="2" placeholder="Mensagem" required></textarea>
+                </div>
+                <div class="my-3"></div>
+                <div class="text-center">
+                  <button data-button type="submit">Agendar</button>
+                </div>
+              </form>
+
+            </div><!-- End Quote Form -->
+
+          </div>
+
+        </div>
+
+      </section>
 
       <!-- ======= About Us Section ======= -->
       <section id="about" class="about">
@@ -263,6 +320,75 @@
       </section><!-- End Services Section -->
 
 
+      <!-- ======= FAQ Section ======= -->
+      <section id="faq" class="faq">
+        <div class="container" data-aos="fade-up">
+          <div class="section-title">
+            <h2>Perguntas Frequentes</h2>
+            <p>Aqui estão algumas respostas para perguntas comuns. Se você tiver outras dúvidas, não hesite em entrar em
+              contato.</p>
+          </div>
+
+          <div class="faq-list">
+            <ul>
+              <li data-aos="fade-up">
+                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">
+                  Quais são as formas de pagamento aceitas e qual a duração das consultas?
+                  <i class="bx bx-chevron-down icon-show"></i>
+                </a>
+                <div id="faq-list-1" class="mt-2 show" data-bs-parent=".faq-list">
+                  <p>
+                    Aceitamos pagamento via Pix, dinheiro ou transferência bancária. Cada consulta tem duração de
+                    aproximadamente 1 hora.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up">
+                <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-2">
+                  Como são realizadas as consultas?
+                  <i class="bx bx-chevron-down icon-show"></i>
+                </a>
+                <div id="faq-list-2" class="mt-2" data-bs-parent=".faq-list">
+                  <p>
+                    As consultas são personalizadas, com base nas necessidades individuais do paciente e
+                    em evidências científicas atualizadas.
+                    Durante o atendimento, conversamos sobre os
+                    possíveis resultados de cada intervenção.
+                    Além disso, fico à disposição para esclarecer dúvidas que possam surgir após a consulta.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up">
+                <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">
+                  Onde ocorrem as consultas?
+                  <i class="bx bx-chevron-down icon-show"></i>
+                </a>
+                <div id="faq-list-3" class="mt-2" data-bs-parent=".faq-list">
+                  <p>
+                    As consultas podem ser realizadas presencialmente no consultório, localizado no Leblon, Rio de
+                    Janeiro, ou online, através do Google Meet.
+                  </p>
+                </div>
+              </li>
+
+              <li data-aos="fade-up">
+                <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">
+                  Você aceita convênios médicos?
+                  <i class="bx bx-chevron-down icon-show"></i>
+                </a>
+                <div id="faq-list-4" class="mt-2" data-bs-parent=".faq-list">
+                  <p>
+                    Não, atendo apenas de forma particular. Essa escolha permite um atendimento mais personalizado e
+                    flexível, sem as limitações que os convênios médicos podem impor.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section><!-- End FAQ Section -->
 
       <!--======= Testimonials Section ======= -->
       <section id="testimonials" class="testimonials">
@@ -412,61 +538,7 @@
               </div>
 
             </div>
-            <div id="form" data-aos="fade">
-              <br>
-              <div class="col-lg-12 mt-4">
-                <form data-form action="https://formsubmit.co/larissaborgesunp@gmail.com" method="post" role="form"
-                  class="php-email-form">
-                  <input type="hidden" name="_cc" value="cassiaqueirozcodelab@gmail.com">
-                  <div class="row" data-aos="fade">
-                    <input type="hidden" name="_captcha" value="false">
-
-                    <p style="font-size: 14px;">Se você tem algum comentário, pergunta ou deseja registrar um
-                      depoimento,
-                      envie uma mensagem aqui. Sua contribuição é valiosa para nossa equipe!</p><br><br>
-                    <div class="col-md-6 form-group">
-                      <input type="text" name="name" class="form-control" id="name" placeholder="Nome e Sobrenome"
-                        required>
-                    </div>
-                    <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
-                    </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Assunto" required>
-                  </div>
-                  <div class="form-group mt-3">
-                    <textarea class="form-control" name="message" rows="2" placeholder="Mensagem" required></textarea>
-                    <div class="form-group mt-3">
-                      <label style="font-size: 14px;">Está enviando um depoimento? Escolha como publicar seu
-                        nome:</label>
-                      <div class="form-group mt-3">
-
-                        <div class="form-check mt-2">
-                          <input class="form-check-input-sm" type="radio" name="publishOption" id="publishNomeSobrenome"
-                            value="nome_sobrenome">
-                          <label style="font-size: 14px;" class="form-check-label" for="publishNomeSobrenome">Nome e
-                            sobrenome</label>
-                        </div>
-                        <div class="form-check mt-2">
-                          <input class="form-check-input-sm" type="radio" name="publishOption" id="publishIniciais"
-                            value="iniciais">
-                          <label style="font-size: 14px;" class="form-check-label" for="publishIniciais">Apenas letras
-                            iniciais</label>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="my-3">
-
-                    </div><br>
-                    <div class="text-center"><button data-button type="submit">Enviar mensagem</button></div><br>
-                </form>
-              </div>
-
-            </div>
-
           </div>
-        </div>
 
         </div>
         </div>

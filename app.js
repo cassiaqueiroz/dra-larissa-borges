@@ -72,7 +72,15 @@ class FormSubmit {
         },
         body: new URLSearchParams(this.getFormObject()).toString(),
       });
-      this.displaySuccess();
+
+      // Verifica se é o formulário de cotação
+      if (this.form.id === "quote-form") {
+        // Redireciona para a página de confirmação
+        window.location.href = "confirmation.html";
+      } else {
+        // Exibe a mensagem de sucesso para outros formulários
+        this.displaySuccess();
+      }
     } catch (error) {
       this.formButton.disabled = false;
       this.formButton.innerText = "Enviar mensagem";
